@@ -1,5 +1,11 @@
+body, html {
+overflow-x: hidden;
+margin: 0;
+}
+
 body {
 background-color: #1e1e1e;
+
 }
 
 #navlinks .nav-link:hover {
@@ -8,7 +14,9 @@ color: #f67dea;
 
 #mainNav {
 font-family: "Marvel";
-font-size: 1.2rem;
+font-size: 2rem;
+overflow: hidden;
+
 }
 
 #navlinks .navbar-nav {
@@ -31,7 +39,7 @@ text-decoration-color: #ce0ebb;
 
 #mainNav .navbar-brand {
 color: #fcd7f9;
-font-size: 1.5rem;
+font-size: 2rem;
 margin-top: 10px;
 font-weight: bold;
 border: 2px solid #f67dea;
@@ -43,27 +51,27 @@ border-radius: 4px;
 
 #buttonnav .navbar-toggler {
 color: #fcd7f9;
-font-size: 1.3rem;
+font-size: 1.8rem;
 backdrop-filter: blur(15px);
 }
 
 #headerArt {
-position: relative;
-justify-self: center;
+position: flex;
+
+justify-content: center;
 }
 
 .firstHeads {
 font-family: 'Marvel';
 color: #fab1f2;
 margin-top: 100px;
-display:wrap;
-align-content: center;
+align-items: center;
 text-align: center;
 font-size: 5.5vw;
 position: flex;
 border: 3px solid #fff;
 border-radius: 3px;
-width: 100vw;
+width: 98vw;
 
 
 }
@@ -75,4 +83,18 @@ width: 100vw;
                 0 0 25px #E9A0CE,
                 0 0 50px #E9A0CE,
                 0 0 100px #E9A0CE;
+}
+
+
+.container {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content: space-evenly;
+    item
+}
+
+#sak2 {
+transform: scaleX(-1);
 }
