@@ -46,3 +46,34 @@ color: #fcd7f9;
 font-size: 1.3rem;
 backdrop-filter: blur(15px);
 }
+
+#headerArt {
+position: relative;
+justify-self: center;
+}
+
+.firstHeads {
+font-family: 'Marvel';
+color: #fff;
+margin-top: 100px;
+
+display:wrap;
+align-content: center;
+text-align: center;
+font-size: 5.5vw;
+position: flex;
+border: 3px solid #E9A0CE;
+border-radius: 3px;
+width: 100vw;
+
+
+}
+
+
+#midTxt:hover {
+    color: #fff;
+    text-shadow: 0 0 5px #E9A0CE,
+                0 0 25px #E9A0CE,
+                0 0 50px #E9A0CE,
+                0 0 100px #E9A0CE;
+}
