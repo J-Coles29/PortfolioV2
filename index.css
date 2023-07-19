@@ -54,15 +54,14 @@ justify-self: center;
 
 .firstHeads {
 font-family: 'Marvel';
-color: #fff;
+color: #fab1f2;
 margin-top: 100px;
-
 display:wrap;
 align-content: center;
 text-align: center;
 font-size: 5.5vw;
 position: flex;
-border: 3px solid #E9A0CE;
+border: 3px solid #fff;
 border-radius: 3px;
 width: 100vw;
 
