@@ -14,7 +14,7 @@ color: #f67dea;
 
 #mainNav {
 font-family: "Marvel";
-font-size: 2rem;
+font-size: 2.5rem;
 overflow: hidden;
 
 }
@@ -57,23 +57,27 @@ backdrop-filter: blur(15px);
 
 #headerArt {
 position: flex;
-
 justify-content: center;
+backdrop-filter: blur(3px);
+
 }
+
+
 
 .firstHeads {
 font-family: 'Marvel';
 color: #fab1f2;
-margin-top: 100px;
 align-items: center;
 text-align: center;
 font-size: 5.5vw;
 position: flex;
-border: 3px solid #fff;
+border: 4px solid #fff;
+backdrop-filter: blur(3px);
 border-radius: 3px;
-width: 98vw;
-
-
+width: 99vw;
+margin-bottom: -900px;
+text-decoration: double;
+margin-top: 150px;
 }
 
 
@@ -89,12 +93,26 @@ width: 98vw;
 .container {
     align-items: flex-start;
     display: flex;
-    flex-direction: row;
-    align-items:flex-start;
     justify-content: space-evenly;
-    item
+    width: auto;
+    height: auto;
+    column-gap: 800px;
+
 }
+
+
 
 #sak2 {
 transform: scaleX(-1);
+width: 2000px;
+opacity: 0.75;
+margin-top: -50px;
+}
+
+#sak1 {
+opacity: 0.75;
+width: 2000px;
+
+
+
 }
