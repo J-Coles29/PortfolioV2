@@ -20,7 +20,7 @@ body::-webkit-scrollbar {
   font-family: "Marvel";
   font-size: 2.2rem;
   overflow: hidden;
-  width: 700px;
+  width: 650px;
 }
 
 #navlinks .navbar-nav {
@@ -57,6 +57,7 @@ nav li:hover {
   color: #fcd7f9;
   font-size: 1.8rem;
   backdrop-filter: blur(15px);
+  margin-right: 50px;
 }
 
 #headerArt {
@@ -75,14 +76,14 @@ nav li:hover {
   border: 4px solid #fff;
   backdrop-filter: blur(3px);
   border-radius: 3px;
-  width: 100vw;
+  max-width: 100vw;
   margin-bottom: -900px;
   text-decoration: double;
   margin-top: 150px;
 } 
 #midTxt p {
     color:transparent;
-    -webkit-text-stroke: 1px #fff;
+    -webkit-text-stroke: 1px #fb93f4;
     font-size: 6vw;
 }
 
@@ -315,13 +316,14 @@ width: auto;
     border: 0;
     padding: 0 30px;
     width: auto;
-    height: 75px;
-    font-size: 2rem;
-    margin-top: 150px;
-    margin-right: 60px;
+    height: 125px;
+    font-size: 3rem;
+    margin-top: 50px;
+    margin-right: 50px;
     border-radius: 2px;
     border: 2px solid var(--border);
     background: none;
+    backdrop-filter: blur(15px);
     color: var(--dark);
     cursor: pointer;
     outline: none;
@@ -331,8 +333,8 @@ width: auto;
       background .15s linear;
     cursor: none;
     > span {
-      backdrop-filter: blur(15px);
-      width: 420px;
+      
+      width: 450px;
       display: inline-block;
       position: relative;
       z-index: 2;
@@ -342,10 +344,12 @@ width: auto;
   }
     .button2 a {
       color:#f2c7e2;
+      text-decoration: none;
     }
     
     .button3 a {
       color:#f2c7e2;
+      text-decoration: none;
     }
   .button3 {
     --light: #f67dea;
@@ -359,24 +363,25 @@ width: auto;
     border: 0;
     padding: 30px;
     width: auto;
-    height: 75px;
+    height: 125px;
     font-size: 3.0rem;
-    margin-top: 150px;
-    margin-right: -450px;
+    margin-top: 50px;
+    margin-right: -455px;
     border-radius: 2px;
     border: 1px solid var(--border);
     background: none;
     color: var(--dark);
     cursor: pointer;
     outline: none;
+    backdrop-filter: blur(15px);
     box-shadow: 0 10px 30px rgba(#414856, 0.1);
     transition: transform .1s linear,
       color .1s linear,
       background .15s linear;
     cursor: none;
     > span {
-      backdrop-filter: blur(15px);
-      width: 420px;
+      width: 450px;
+      height: 80px;
       display: inline-block;
       position: relative;
       z-index: 2;
