@@ -1,7 +1,7 @@
 body,
 html {
   overflow-x: hidden;
-
+  cursor: none;
 }
 
 body {
@@ -12,8 +12,38 @@ body::-webkit-scrollbar {
     width: 0px;
   }
 
+
+
+  .cursor {
+    --cursor: #f67dea;
+    position: fixed;
+    top: -50px;
+    z-index: 99;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: none;
+    border: solid 4px var(--cursor);
+    pointer-events: none;
+    transition: transform .3s ease, background .3s ease,
+      border-color .3s ease;
+  }
+  [cursor="link"] {
+    &:hover {
+      ~ .cursor {
+        mix-blend-mode: difference;
+        transform: scale(1.5);
+        cursor: none;
+        background: #fff;
+        border-color: #fff;
+      }
+    }
+  }
+  
+
 #navlinks .nav-link:hover {
   color: #f67dea;
+  cursor: none;
 }
 
 #mainNav {
@@ -21,6 +51,7 @@ body::-webkit-scrollbar {
   font-size: 2.2rem;
   overflow: hidden;
   width: 650px;
+  cursor: none;
 }
 
 #navlinks .navbar-nav {
@@ -28,17 +59,20 @@ body::-webkit-scrollbar {
   border-radius: 8px;
   margin-top: 15px;
   overflow: hidden;
+  cursor: none;
 }
 
 nav li {
   display: inline-block;
   margin-top: -20px;
   padding: 15px;
+  cursor: none;
 }
 
 nav li:hover {
   text-decoration-line: line-through;
   text-decoration-color: #ce0ebb;
+  cursor: none;
 }
 
 #mainNav .navbar-brand {
@@ -51,6 +85,7 @@ nav li:hover {
   padding-right: 5px;
   backdrop-filter: blur(15px);
   border-radius: 4px;
+  cursor: none;
 }
 
 #buttonnav .navbar-toggler {
@@ -58,12 +93,14 @@ nav li:hover {
   font-size: 1.8rem;
   backdrop-filter: blur(15px);
   margin-right: 50px;
+  cursor: none;
 }
 
 #headerArt {
   position: flex;
   justify-content: center;
   backdrop-filter: blur(3px);
+  cursor: none;
 }
 
 .firstHeads {
@@ -108,6 +145,7 @@ nav li:hover {
   height: auto;
   column-gap: 800px;
   margin-bottom: -900px;
+  cursor: none;
 }
 
 #sak2 {
@@ -132,6 +170,7 @@ nav li:hover {
   width: 130vw;
   height: 100vh;
   overflow: visible;
+
 }
 .loader {
   width: 100vw;
@@ -228,10 +267,14 @@ nav li:hover {
     float: right;
 }
 
+#contactList a {
+  cursor: none;
+}
+
 #contactList .contact {
     max-width: 100%;
     height: auto;
-width: auto;
+    width: auto;
     margin-top: 15px;
     float: right;
   }
@@ -244,7 +287,7 @@ width: auto;
     align-content: flex-start;
     justify-content: flex-start;
     align-items: column;
-    max-width: 100vw;
+    max-width: 50vw;
     float: right;
 
   }
@@ -256,39 +299,41 @@ width: auto;
 
   #link {
     width: 75px;
-    height: 75px;
+    height:75px;
     backdrop-filter: blur(10px);
     padding: 10px;
     border-radius: 3px;
   }
   #git {
     width: 75px;
-    height: 75px;
+    height:75px;
     backdrop-filter: blur(10px);
     padding: 10px;
     border-radius: 3px;
   }
   #outlook {
     width: 75px;
-    height: 75px;
+    height:75px;
     backdrop-filter: blur(10px);
     padding: 10px;
     border-radius: 3px;
   }
   #phone {
     width: 75px;
-    height: 75px;
+    height:75px;
     backdrop-filter: blur(10px);
     padding: 10px;
     border-radius: 3px;
   }
   #art {
     width: 75px;
-    height: 75px;
+    height:75px;
     backdrop-filter: blur(10px);
     padding: 10px;
     border-radius: 3px;
   }
+
+
 
 #mainFocus {
     max-height: 50vh;
@@ -333,7 +378,7 @@ width: auto;
       background .15s linear;
     cursor: none;
     > span {
-      
+      cursor: none;
       width: 450px;
       display: inline-block;
       position: relative;
@@ -345,11 +390,13 @@ width: auto;
     .button2 a {
       color:#f2c7e2;
       text-decoration: none;
+      cursor: none;
     }
     
     .button3 a {
       color:#f2c7e2;
       text-decoration: none;
+      cursor: none;
     }
   .button3 {
     --light: #f67dea;
@@ -361,7 +408,7 @@ width: auto;
     justify-content: center;
     position: relative;
     border: 0;
-    padding: 30px;
+    padding: 0, 30px;
     width: auto;
     height: 125px;
     font-size: 3.0rem;
@@ -380,12 +427,108 @@ width: auto;
       background .15s linear;
     cursor: none;
     > span {
+      cursor: none;
       width: 450px;
-      height: 80px;
       display: inline-block;
       position: relative;
       z-index: 2;
       transition: transform .15s linear;
     }
-  
   }
+
+  @media screen and (min-width: 200px) and (max-width:300px){
+    #link, #art, #phone, #outlook, #git{
+      width: 35px;
+      height: 35px;
+    }
+    #contact li {
+      display: inline-block;
+    }
+    
+    #mainNav .navbar-brand {
+      
+      font-size: 1rem;
+  
+    }
+  }
+
+
+  @media screen and (min-width: 300px) and (max-width:700px){
+  #link, #art, #phone, #outlook, #git{
+    width: 45px;
+    height: 45px;
+  }
+  #contact li {
+    display: inline-block;
+  }
+  
+  #mainNav .navbar-brand {
+    
+    font-size: 1rem;
+
+  }
+  .firstHeads {
+    border: 2px solid #fff;
+    backdrop-filter: blur(5px);
+    border-radius: 3px;
+    margin-top: 100px;
+  }
+
+  #cursor {
+    cursor: none;
+  }
+
+  #buttonnav .navbar-toggler {
+    margin-left: -575px;
+    font-size: 1rem;
+
+  }
+
+  #navlinks .navbar-nav {
+    font-size: 1rem;
+  }
+
+
+
+}
+
+@media screen and (min-width: 340px) and (max-width:1000px) {
+  #mainFocus .button2 {
+    font-size: 1rem;
+    width: 175px;
+    height: 50px;
+    margin-top: 200px;
+    > span {
+      width: 150px;
+      
+      text-align: center;
+    }
+
+  }
+
+  #mainFocus .button3 {
+    font-size: 1rem;
+    width: 175px;
+    height: 50px;
+    margin-top: 200px;
+    > span {
+      width: 150px;
+      
+      text-align: center;
+    }
+
+  }
+
+  #mainFocus {
+    margin-left: -250px;
+  }
+
+  #container2 {
+    margin-top: -100px;
+  }
+  #buttonnav .navbar-toggler {
+    margin-left: -575px;
+    font-size: 1rem;
+
+  }
+}
