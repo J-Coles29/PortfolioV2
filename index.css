@@ -1,7 +1,7 @@
 body,
 html {
   overflow-x: hidden;
-  cursor: none;
+
   scroll-behavior: smooth;
 }
 
@@ -17,36 +17,9 @@ body::-webkit-scrollbar {
 
 
 
-  .cursor {
-    --cursor: #f67dea;
-    position: fixed;
-    top: -50px;
-    z-index: 99;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: none;
-    border: solid 4px var(--cursor);
-    pointer-events: none;
-    transition: transform .3s ease, background .3s ease,
-      border-color .3s ease;
-  }
-  [cursor="link"] {
-    &:hover {
-      ~ .cursor {
-        mix-blend-mode: difference;
-        transform: scale(1.5);
-        cursor: none;
-        background: #fff;
-        border-color: #fff;
-      }
-    }
-  }
-  
-
 #navlinks .nav-link:hover {
   color: #f67dea;
-  cursor: none;
+
 }
 
 #mainNav {
@@ -54,7 +27,7 @@ body::-webkit-scrollbar {
   font-size: 2.2rem;
   overflow: hidden;
   width: 650px;
-  cursor: none;
+
 }
 
 #navlinks .navbar-nav {
@@ -62,20 +35,20 @@ body::-webkit-scrollbar {
   border-radius: 8px;
   margin-top: 15px;
   overflow: hidden;
-  cursor: none;
+
 }
 
 nav li {
   display: inline-block;
   margin-top: -20px;
   padding: 15px;
-  cursor: none;
+  
 }
 
 nav li:hover {
   text-decoration-line: line-through;
   text-decoration-color: #ce0ebb;
-  cursor: none;
+  
 }
 
 #mainNav .navbar-brand {
@@ -88,7 +61,7 @@ nav li:hover {
   padding-right: 5px;
   backdrop-filter: blur(15px);
   border-radius: 4px;
-  cursor: none;
+  
 }
 
 #buttonnav .navbar-toggler {
@@ -96,14 +69,14 @@ nav li:hover {
   font-size: 1.8rem;
   backdrop-filter: blur(15px);
   margin-right: 50px;
-  cursor: none;
+  
 }
 
 #headerArt {
   position: flex;
   justify-content: center;
   backdrop-filter: blur(3px);
-  cursor: none;
+  
 }
 
 .firstHeads {
@@ -148,7 +121,7 @@ nav li:hover {
   height: auto;
   column-gap: 800px;
   margin-bottom: -900px;
-  cursor: none;
+  
 }
 
 #sak2 {
@@ -271,7 +244,7 @@ nav li:hover {
 }
 
 #contactList a {
-  cursor: none;
+  
 }
 
 #contactList .contact {
@@ -379,9 +352,9 @@ nav li:hover {
     transition: transform .1s linear,
       color .1s linear,
       background .15s linear;
-    cursor: none;
+    
     > span {
-      cursor: none;
+      
       width: 450px;
       display: inline-block;
       position: relative;
@@ -393,13 +366,13 @@ nav li:hover {
     .button2 a {
       color:#f2c7e2;
       text-decoration: none;
-      cursor: none;
+      
     }
     
     .button3 a {
       color:#f2c7e2;
       text-decoration: none;
-      cursor: none;
+      
     }
   .button3 {
     --light: #f67dea;
@@ -428,9 +401,9 @@ nav li:hover {
     transition: transform .1s linear,
       color .1s linear,
       background .15s linear;
-    cursor: none;
+    
     > span {
-      cursor: none;
+      
       width: 450px;
       display: inline-block;
       position: relative;
@@ -439,20 +412,12 @@ nav li:hover {
     }
   }
 
-#myProjects {
-    float: left;
-  }
-
 #content h2.text-center {
 
     font-size: 6.2rem;
-    margin-bottom: -150px;
+    float: left;
     color: #b2bfff;
-    text-shadow: 
-      0 0 5px #DEA5E7,
-      0 0 25px #DEA5E7,
-      0 0 50px #DEA5E7,
-      0 0 100px #DEA5E7;
+
   
   }
 
@@ -466,19 +431,20 @@ nav li:hover {
       0 0 100px #DEA5E7;
   }
 
-#content {
-    margin-bottom: -850px;
-    column-count: 2;
-    column-gap: 40px;
-    margin-top: 75px;
-  }
   
-#column1 {
-    margin-top: 75px;
-    height: 900px;
-    border-radius: 6px;
-  
-  }
+
+#myProjects {
+  float: left;
+  margin-top: 200px;
+}
+
+#myProjects2 {
+  float: right;
+  margin-right: 200px;
+  margin-top: 200px;
+}
+
+
 
 #column1 ol {
   margin-top: 150px;
@@ -487,14 +453,14 @@ nav li:hover {
 } 
 
 #column1 p {
-  font-size: 2rem;
+  font-size: 2vmin;
   width: 1500px;
 }
 
 #column1 li h2 {
   color:#b2bfff;
   font-family: 'JetBrains Mono';
-  font-size: 3vh;
+  font-size: 4vmin;
 }
 
 #column1 ol li {
@@ -511,6 +477,87 @@ ol .res {
   color: #f0a5ff;
 }
 
+
+
+#colContent {
+  padding: 20px;
+  position: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#column2 .headText {
+  color: #f2c7e2;
+  font-size: 2rem;
+  text-align: center;
+  width: 1200px;
+
+}
+
+
+#column2 .text-center2 {
+  font-size: 6.2rem;
+  color: #b2bfff;
+  text-align: center;
+  padding: 10px;
+}
+
+#column2 .subtext2 {
+  color: #f0a5ff;
+  text-align: left;
+  font-weight: lighter;
+  font-size: 2vmin;
+}
+
+
+
+#dropButtons button{
+  position: flex;
+  display: flex;
+  justify-content: flex-start;
+  align-items: space-between;
+  font-family: 'JetBrains Mono';
+
+}
+
+.dropdown-content a:hover {background-color: #1e1e1e;}
+
+.dropdown:hover .dropdown-content {display: block; width: 1500px;}
+
+.dropdown:hover .dropbtn {background-color: #3e3e3e;}
+
+.dropbtn {
+  background-color:transparent;
+  font-size: 3rem;
+  color: #b2bfff;
+  text-shadow: 
+      0 0 5px #DEA5E7,
+      0 0 25px #DEA5E7,
+      0 0 50px #DEA5E7,
+      0 0 100px #DEA5E7;
+  padding: 16px;
+  font-size: 3.5rem;
+  margin-left: 280px;
+  border-radius: 6px;
+  border-style: inset;
+  border-width: 3px;
+  border-color: #dea5e7;
+
+}
+
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  backdrop-filter: blur(6px);
+  padding: 15px;
+  box-shadow: 4px 16px 16px 4px rgba(0,0,0,0.6);
+  z-index: 1;
+  border-radius: 6px;
+  margin-left: -100px;
+
+}
 
 
 
@@ -555,7 +602,7 @@ ol .res {
   }
 
   #cursor {
-    cursor: none;
+    
   }
 
   #buttonnav .navbar-toggler {
