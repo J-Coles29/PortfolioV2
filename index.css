@@ -263,7 +263,7 @@ nav li:hover {
     align-items: column;
     max-width: 50vw;
     float: right;
-
+  
   }
 
 #contact1 li {
@@ -420,7 +420,7 @@ nav li:hover {
   }
 
 #content ol h2 {
-    font-size: 3vmin;
+    font-size: 2.5vmin;
     color: #b2bfff;
     text-shadow: 
       0 0 5px #DEA5E7,
@@ -439,7 +439,7 @@ nav li:hover {
 #myProjects2 {
   float: right;
   margin-right: 200px;
-  margin-top: 200px;
+
 }
 
 
@@ -447,6 +447,7 @@ nav li:hover {
 #column1 ol {
   margin-top: 150px;
   list-style-type:circle;
+ 
 
 } 
 
@@ -486,9 +487,9 @@ ol .res {
 
 #column2 .headText {
   color: #f2c7e2;
-  font-size: 2rem;
+  font-size: 2vmin;
   text-align: center;
-  width: 1200px;
+  width: 1450px;
 
 }
 
@@ -512,8 +513,8 @@ ol .res {
 #dropButtons button{
   position: flex;
   display: flex;
-  justify-content: flex-start;
-  align-items: space-between;
+  justify-content: center;
+  align-content: center;
   font-family: 'JetBrains Mono';
 
 }
@@ -534,12 +535,12 @@ ol .res {
       0 0 50px #DEA5E7,
       0 0 100px #DEA5E7;
   padding: 16px;
-  font-size: 3.5rem;
-  margin-left: 280px;
+  font-size: 3.5vmin;
   border-radius: 6px;
   border-style: inset;
   border-width: 3px;
   border-color: #dea5e7;
+
 
 }
 
@@ -720,4 +721,285 @@ ol .res {
     }
 
   }
+}
+
+@media screen and (min-width: 900px) and (max-width:2000px) {
+  #mainFocus .button2 {
+    font-size: 2.3vmin;
+    width: 300px;
+    height: 60px;
+    margin-top: 100px;
+    
+    > span {
+      width: 150px;
+      
+      text-align: center;
+    }
+
+  }
+
+  #mainFocus .button3 {
+    font-size: 2.3vmin;
+    width: 300px;
+    height: 60px;
+    margin-top: 100px;
+    border: 2px solid #f67dea;
+    > span {
+      width: 150px;
+      
+      text-align: center;
+    }
+
+  }
+
+  #mainHead {
+    margin-top: 100px;
+  }
+
+  #link {
+    width: 65px;
+    height:65px;
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    border-radius: 3px;
+  }
+  #git {
+    width: 65px;
+    height:65px;
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    border-radius: 3px;
+  }
+  #outlook {
+    width: 65px;
+    height:65px;
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    border-radius: 3px;
+  }
+  #phone {
+    width: 65px;
+    height:65px;
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    border-radius: 3px;
+  }
+  #art {
+    width: 65px;
+    height:65px;
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    border-radius: 3px;
+  }
+
+  #mainFocus {
+    max-height: 50vh;
+    max-width: 50vw;
+    position: flex;
+    margin-left: -105px;
+    bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: row;
+    align-content: center;
+  }
+  .container {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-evenly;
+    width: auto;
+    height: auto;
+    column-gap: 600px;
+    margin-left: 400px;
+    margin-bottom:-150px;
+    margin-top: 320px;
+  }
+
+
+  #sak2 {
+    transform: scaleX(-1);
+    width: 900px;
+    opacity: 0.75;
+
+  }
+  
+  #sak1 {
+    opacity: 0.75;
+    width: 900px;
+
+  }
+  
+  .firstHeads {
+    font-family: "Marvel";
+    color: #f7d1f2;
+    align-items: center;
+    text-align: center;
+    font-size: 8.5vmin;
+    position: flex;
+    border: 3px solid #fff;
+    backdrop-filter: blur(3px);
+    border-radius: 3px;
+    max-width: 100vw;
+    padding: 40px;
+    text-decoration: double;
+    margin-top: 150px;
+  } 
+  #midTxt p {
+    color:transparent;
+    -webkit-text-stroke: 1px #fb93f4;
+    font-size: 10vmin;
+}
+
+#mainNav {
+  font-family: "Marvel";
+  font-size: 2.2vmin;
+  overflow: hidden;
+  width: 650px;
+
+}
+
+#navlinks .navbar-nav {
+  backdrop-filter: blur(15px);
+  border-radius: 8px;
+  margin-top: 15px;
+  overflow: hidden;
+
+}
+
+nav li {
+  display: inline-block;
+  margin-top: -20px;
+  padding: 15px;
+  
+}
+
+nav li:hover {
+  text-decoration-line: line-through;
+  text-decoration-color: #ce0ebb;
+  
+}
+
+#mainNav .navbar-brand {
+  color: #fcd7f9;
+  font-size: 3vmin;
+  margin-top: 10px;
+  font-weight: bold;
+  border: 2px solid #f67dea;
+  padding-left: 5px;
+  padding-right: 5px;
+  backdrop-filter: blur(15px);
+  border-radius: 4px;
+  
+}
+
+#buttonnav .navbar-toggler {
+  color: #fcd7f9;
+  font-size: 1.8rem;
+  backdrop-filter: blur(15px);
+  margin-right: 50px;
+  
+}
+
+#myProjects {
+  float: left;
+
+}
+
+#myProjects2 {
+  float: right;
+  
+
+}
+
+
+
+#column1 ol {
+
+  list-style-type:circle;
+ 
+
+} 
+
+#column1 p {
+  font-size: 2vmin;
+  width: 800px;
+}
+
+#column1 li h2 {
+  color:#b2bfff;
+  font-family: 'JetBrains Mono';
+  font-size: 4vmin;
+}
+
+#column1 ol li {
+  font-size: 2vh;  
+  color: white;
+  backdrop-filter: blur(3px);
+ 
+
+}
+
+
+ol .res {
+  font-family: 'JetBrains Mono';
+  font-size: 1.3vh;
+  font-weight: lighter;
+  color: #f0a5ff;
+}
+
+#content h2.text-center {
+
+  font-size: 6vmin;
+  text-align: center;
+  color: #b2bfff;
+  margin-left: 30px;
+  font-family: 'Jetbrains Mono';
+
+}
+
+#colContent {
+
+  position: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#column2 .headText {
+  color: #f2c7e2;
+  font-size: 2vmin;
+  text-align: center;
+  float: right;
+  width: 600px;
+  margin-left: 20px;
+
+
+}
+
+#column2 {
+  margin-right: -15px;
+}
+
+#content ol h2 {
+  font-size: 3vmin;
+}
+
+#column2 .text-center2 {
+  font-size: 6vmin;
+  color: #b2bfff;
+  text-align: center;
+  padding: 10px;
+  
+  margin-right: -220px;
+  font-family: 'Jetbrains Mono';
+}
+
+#column2 .subtext2 {
+  color: #f0a5ff;
+  text-align: left;
+  font-weight: lighter;
+  font-size: 2vmin;
+}
+
+
 }
