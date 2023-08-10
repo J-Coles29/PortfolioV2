@@ -243,9 +243,7 @@ nav li:hover {
     float: right;
 }
 
-#contactList a {
-  
-}
+
 
 #contactList .contact {
     max-width: 100%;
@@ -414,7 +412,7 @@ nav li:hover {
 
 #content h2.text-center {
 
-    font-size: 6.2rem;
+    font-size: 4vmin;
     float: left;
     color: #b2bfff;
 
@@ -422,7 +420,7 @@ nav li:hover {
   }
 
 #content ol h2 {
-    font-size: 3rem;
+    font-size: 3vmin;
     color: #b2bfff;
     text-shadow: 
       0 0 5px #DEA5E7,
@@ -601,9 +599,6 @@ ol .res {
     margin-top: 100px;
   }
 
-  #cursor {
-    
-  }
 
   #buttonnav .navbar-toggler {
     margin-left: -575px;
